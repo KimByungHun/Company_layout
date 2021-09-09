@@ -766,7 +766,7 @@ header_sub
         color: #444; }
     #header .inner .menuWeb #gnb {
       position: absolute;
-      right: 0;
+      right: 10px;
       top: 50%;
       transform: translateY(-50%); }
       #header .inner .menuWeb #gnb::after {
