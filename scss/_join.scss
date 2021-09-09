@@ -1,0 +1,138 @@
+// subpage contnet ---------------------
+.join{
+    width:100%; 
+    padding:0px 0px 100px;
+    
+    .sub_visual{
+        // width:100%; 
+        // // height:250px; 
+        background: url(../img/banner4.jpg) no-repeat center/cover; 
+        // // background-attachment: scroll;
+        // margin-bottom:50px; 
+        // text-align: center;
+
+
+        h1{
+            // font: bold 54px/1 'Poppins'; 
+            color:#fff; 
+            // padding-top: 60px;
+            // margin-bottom:20px; 
+
+            &::after{
+                // content:'';
+                // display: block;
+                // margin: 20px auto 0;
+                // width: 180px;
+                // height: 2px;
+                background: #eee;
+            }
+        }
+        h2{
+            // font: bold 26px/1 'Gothic A1'; 
+            color:#fff; 
+        }
+    }
+
+    .inner{
+        width:1180px; 
+        margin:0 auto; 
+        min-height:500px; 
+
+        fieldset{
+            border: none;
+        }
+
+        
+        h2{
+            font: bold 25px/1 'Gothic A1';
+            color: #d0382a;
+            margin-bottom: 20px;
+            margin-top: 50px;
+
+            &::before{
+                content: ''; display: block;
+                width: 100%; height: 2px;
+                background: #d0382a;
+                margin-bottom: 20px;
+            }
+        }
+
+        table{
+            width: 100%;
+            border-top: 1px solid #777;
+
+            tr{
+                th{
+                    width: 20%;
+                    padding: 20px 40px;
+                    text-align: left;
+                }
+                .submit{
+                    border-right:none;
+                    text-align: center;
+                }
+                td{
+                    width: 60%;
+                    padding:20px 40px;
+                }
+            }
+            &:nth-of-type(2){
+                select{
+                     width: 20%;
+                }
+            }
+            &:last-child{
+                border:none;
+            }
+        }
+
+        
+
+        textarea{
+            resize:none;
+            width: 100%;
+            height: 120px;
+            padding: 20px;
+            font: 14px/1.6 'Gothic A1';
+            color: #888;
+            border:1px solid #aaa;
+
+            &:first-child{
+                width: 82%;
+            }
+        }
+
+        input[type="text"] ,input[type="password"], select{
+            width: 40%;
+            height: 30px;
+            border:1px solid #aaa;
+            background: rgba(0,0,0,0.03);
+            padding-left: 15px;
+        }
+
+
+        input[type="checkbox"], input[type="radio"]{
+            margin-left: 5px;
+        }
+
+        input[type="reset"], input[type="submit"]{
+            width: 120px; height: 40px;
+            font: bold 12px/40px 'poppins'; color: #666;
+            border: 1px solid #777; border-radius: 10px;
+            background: #fff;
+        }
+
+
+    }
+
+
+}
+.essential{
+    color: rgba(255, 0, 0, 0.788);
+}
+.more_info{
+    font: normal 12px/1 'arial';
+    color: #d0382a;
+    padding-top: 5px;
+    padding-left: 5px;
+}

@@ -1,0 +1,197 @@
+// subpage contnet ---------------------
+.community{
+    width:100%; 
+    padding:0px 0px 100px;
+    
+    .sub_visual{
+        // width:100%; 
+        // height:250px; 
+        background: url(../img/banner2.jpg) no-repeat top/cover; 
+        // // background-attachment: scroll;
+        // margin-bottom:100px; 
+        // text-align: center;
+
+
+        // h1{
+        //     font: bold 54px/1 'Poppins'; 
+        //     color:#000; 
+        //     padding-top: 60px;
+        //     margin-bottom:20px; 
+
+        //     &::after{
+        //         content:'';
+        //         display: block;
+        //         margin: 20px auto 0;
+        //         width: 180px;
+        //         height: 2px;
+        //         background: #222;
+        //     }
+        // }
+        // h2{
+        //     font: bold 26px/1 'Gothic A1'; 
+        //     color:#000; 
+        // }
+    }
+
+    .inner{
+        width:1180px; 
+        margin:0 auto; 
+        min-height:500px; 
+
+
+        .board_filter{
+            width: 100%;
+            margin: 20px 0;
+            position: relative;
+    
+            .board_btn{
+                position: absolute;
+                top: -50px;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                li{
+                    float: left;
+
+                    a{
+                        display: inline-block;
+                        padding: 9px 9px 5px 9px;
+                        font: normal 16px/1 'Gothic A1';
+                        color: #777;
+                        transition: .3s;
+                    }
+                    :hover{
+                        // border-bottom: 1px solid #333;
+                        font-weight: bold;
+                        color: #222;
+    
+                    }
+                }
+            }
+        }
+
+        table{
+            width: 100%;
+            border-bottom: 1px solid #111;
+            margin-bottom: 50px;
+            border-collapse: collapse;
+
+            th{
+                padding: 15px;
+                color: #414141;
+                border-top: 2px solid #222;
+                border-bottom: 1px solid #ddd;
+                font: bold 16px/ 'Gothic A1';
+                
+
+                &:nth-of-type(1){
+                    width: 15%;
+                }
+                &:nth-of-type(2){
+                    width: 55%;
+                }
+                &:nth-of-type(3){
+                    width: 10%;
+                }
+                &:nth-of-type(4){
+                    width: auto;
+                }
+            }
+
+            td{
+                padding: 15px 0px; 
+                border-bottom: 1px solid #ddd;
+                font-family: 'Gothic A1';
+                text-align: center;
+
+                &:nth-of-type(1){
+                    padding: 15px 0px; 
+                    font-weight: bold;
+                    color: #666666;
+                }
+
+                &:nth-of-type(2){
+                    padding: 13px;
+                    font-weight: normal;
+                    text-align: left;
+                    opacity: 0.7;
+
+                    a{
+                        display: flex;
+                        color: #0a0a0a;
+                        
+                            // &::after{
+                            //     display: block;
+                            //     content: '';
+                            //     width: 0px;
+                            //     height: 1px;
+                            //     background: rgba(255,0,0,.7);
+                            //     transition: .3s;   
+                            // }
+                        
+                        
+                    }
+                    &:hover{
+                        a{
+                            color: #111;
+                            text-decoration: underline;
+                            text-decoration-color: red;
+                            // &::after{
+                            //     width: 90%;
+                            // }
+                        }
+                        opacity: 1;
+                        
+                    }
+                }
+
+                &:nth-of-type(3){
+                    color: #737373;
+                }
+                &:nth-of-type(4){
+                    color: #737373;
+                }
+            }
+        }
+
+        .pagination{
+            width: 100%;
+            text-align: center;
+
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .prev, .next{
+                display: block;
+                width: 100px;
+                height: 30px;
+            }
+            .numbers{
+                display: inline-block;
+                text-align: center;
+                a{
+                    display:inline-block; width:30px; height:30px; 
+                    font:16px/30px 'Gothic A1'; color:#222; text-align:center; 
+                    margin:0 5px; 
+                    position: relative;
+                    transition: 0.5s; 
+                    opacity: 0.7;
+                }
+                :hover{
+                    opacity: 1;
+                    font-weight: bold;
+                    border-bottom: 1px solid red;
+                    &:first-child, &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

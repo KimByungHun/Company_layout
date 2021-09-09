@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="custom.js"></script>
+
+</head>
+
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <h1><a href="index.html">LOREM</a></h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNTY</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+
+                <ul class="util">
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+
+
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">LOREM</a>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, delectus?</span>
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNTY</a></li>
+                    <li><a href="#">GALLERYS</a></li>
+                    <li><a href="#">LOCATION</a></li>
+					<li><a href="join.html">JOIN</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content join">
+        <div class="sub_visual">
+            <h1>JOIN</h1>
+            <h2>회원가입</h2>
+        </div>
+
+        <div class="inner">
+            <!-- 서브페이지 컨텐츠 -->
+            
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="hidden">회원가입 입력양식폼</legend>
+
+					<h2>필수정보입력</h2>
+					<table surmmary="회원의 아이디, 비밀번호, 비밀번호 확인, 이름, 자택주소, 휴대폰 번호, 이메일 입력양식폼">
+						<caption class="hidden">회원정보 입력양식 테이블</caption>
+
+						<tr>
+							<th scope="row"><label for="userid">아이디<span class="essential">*</span> </label></th>
+							<td><input type="text" name="userid" id="userid" placeholder="영문,숫자 4~12자리 입력해주세요." required></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd">비밀번호<span class="essential">*</span></label></th>
+							<td><input type="password" name="pwd" id="pwd" placeholder="숫자, 영문자 조합으로 8~20자리 입력해주세요." required></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd">비밀번호 확인<span class="essential">*</span></label></th>
+							<td><input type="password" name="pwd" id="pwd" placeholder="입력하신 비밀번호를 다시 한번 입력해주세요." required></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="email">E-MAIL<span class="essential">*</span></label></th>
+							<td>
+								<input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요.">
+								@
+								<select name="company" id="company">
+									<option value="naver">naver.com</option>
+									<option value="nate">nate.com</option>
+									<option value="daum">daum.net</option>
+								</select>
+							</td>
+						</tr>
+						<!-- <tr>
+							<th colspan="2" >
+								<input type="reset" value="CANCEL">
+								<input type="submit" value="SUBMIT">
+							</th>
+						</tr> -->
+					</table>
+
+					<h2>선택정보입력</h2>
+					<table surmmary="회원의 광고 정보 수신, 우편물 수령지, 자택/직장 전화번호, 직장명, 우편번호 입력양식폼">
+						<caption class="hidden">회원정보 입력양식 테이블</caption>
+						<tr>
+							<th scope="row">광고 정보 수신 동의</th>
+							<td>								
+								
+								<label for="reading">
+									<input type="checkbox" name="ad" id="emailcheck" value="email">
+									이메일
+								</label>
+								<label for="music"><input type="checkbox" msm="ad" id="msm" value="music">문자</label>
+								<label for="game"><input type="checkbox" name="ad" id="post" value="post">우편물</label>
+								<p class="more_info">광고 정보 수신동의를 하시면 상품 및 이벤트 정보를 받으실 수 있습니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">우편물수령지</th>
+							<td>
+								<input type="radio" name="postbox" id="home" value="home">
+								<label for="male">자택</label>
+								<input type="radio" name="postbox" id="office" value="office">
+								<label for="female">직장</label>
+								<p class="more_info">선택한 우편물 수령지 주소로 사은품 등 우편물이 발송됩니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="contact_number">전화번호</label></th>
+							<td>
+								<select name="contact_number" id="contact_number">
+									<option value="home">자택</option>
+									<option value="company">직장</option>
+								</select>
+								<input type="text" name="contact_number" id="email" placeholder="-없이 전화번호를 입력해주세요.">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="comments">COMMENT</label></th>
+							<td>
+								<textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트를 입력해 주세요"></textarea>
+							</td>
+						</tr>
+			
+					</table>
+
+					<h2>Terms & Policy</h2>
+					<textarea name="" id="" cols="30" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor facilis ipsam? Reiciendis, ratione sapiente fuga ab et quod inventore, sint, saepe consectetur repudiandae itaque modi laborum aspernatur nostrum! Dolorum minus aliquam eveniet magni, alias porro consequuntur laborum iusto iste, beatae inventore perferendis sapiente nulla! Quae commodi hic magni. At eum, inventore maiores ab obcaecati cupiditate id explicabo ut voluptatum dolorum. Perferendis repellendus, facilis vel cum eaque nesciunt deserunt odio ut nulla delectus tempore animi officiis ipsa, tenetur aliquam, quo atque! Porro sequi dolores nulla natus recusandae facilis, corporis dolore. In, quod eaque pariatur magnam quibusdam aliquam quasi soluta deserunt quam deleniti sit animi molestiae iste minima repudiandae aliquid officia vero modi, quae maxime autem obcaecati. Nisi voluptates dolorem debitis eveniet, maxime minus voluptatum aliquam. Quisquam quibusdam necessitatibus esse veniam maxime dolorem dolor et accusamus voluptas. Quae autem quaerat placeat ea, nulla rem libero accusamus quis officia qui eveniet debitis corrupti corporis repellendus delectus? Aliquid dolore blanditiis provident porro ab perspiciatis, voluptas fugit iusto distinctio sapiente, optio tenetur eius hic repellendus. Voluptate repudiandae fugit quis porro! Esse facilis debitis velit, magnam inventore dicta est, excepturi commodi odio omnis tempore et maxime. Dolor ex ratione minima molestias quidem. Dolor, facilis dolores?
+					</textarea>
+					<table>
+						<tr>
+							<th class="submit" colspan="2" >
+								<input type="reset" value="CANCEL">
+								<input type="submit" value="SUBMIT">
+							</th>
+						</tr>
+					</table>
+
+					
+				</fieldset>
+			</form>
+
+        </div>
+    
+    </section>
+    
+
+    <footer id="footer_sub">
+		<div class="inner">
+
+            <article>
+                <h1>LOREM</h1>
+                <a href="index.html"><img src="/img/footer.jpg" alt="푸터"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quibusdam aperiam earum aliquam dolor corrupti!</p>
+            </article>
+			
+			
+            <article>
+                <h2>Lorem, ipsum.</h2>
+                
+                <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, earum.
+                </address>
+
+                <h2>Lorem, ipsum.</h2>
+                <div class="tel">
+                    <i class="fas fa-phone-alt"></i> 1544-1544
+                </div>
+            </article>
+			
+            <article>
+                <h2>Lorem, ipsum.</h2>
+
+                <ul>
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNTY</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </article>
+
+            <article >
+                <h2>Lorem, ipsum.</h2>
+
+                <div class="input">
+                    <input type="email" name="useremail" id="useremail" placeholder="e-mail Adress" required>
+                    <a href="#">GO</a>
+                </div>
+                                    
+                <p>Lorem ipsum dolor sits amet, consectetur adipisicing elit. Nihil quibusdam aperiam earum aliquam dolor corrupti!</p>
+                <div class="icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab  fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab  fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab  fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab  fab fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </article>
+		</div>
+        <p>2021 LOREM &copy; copyright all right reserved.</p>
+	</footer>
+
+</body>
+
+</html>

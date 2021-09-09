@@ -1,0 +1,150 @@
+// subpage contnet ---------------------
+.department{
+    width:100%; 
+    padding:0px 0px 100px;
+    
+    .sub_visual{
+        // width:100%; 
+        // height:250px; 
+        background: url(../img/sub_visual4.jpg) no-repeat top/cover; 
+        // background-attachment: scroll;
+        // margin-bottom:50px; 
+        // text-align: center;
+
+
+        // h1{
+        //     // font: bold 54px/1 'Poppins'; 
+        //     // color:#000; 
+        //     // padding-top: 60px;
+        //     // margin-bottom:20px; 
+
+        //     &::after{
+        //         content:'';
+        //         display: block;
+        //         margin: 20px auto 0;
+        //         width: 180px;
+        //         height: 2px;
+        //         background: #111;
+        //     }
+        // }
+        // h2{
+        //     font: bold 26px/1 'Gothic A1'; 
+        //     color:#000; 
+        // }
+    }
+
+    .inner{
+        .division{
+            width: 100%;
+            height: 800px;
+            background: url(../img/organization.jpg) no-repeat center/contain;
+        }
+
+        ul.div_tree{
+            position:absolute;
+            top:-9999px;
+            opacity:0;
+
+            li{
+                span{
+                    display: block;
+                    width: 40%;
+                    height: 50px;
+                    background: #111;
+                    margin-bottom: 20px;
+                    font: bold 13px/50px 'Gothic A1';
+                    color: #fff;
+                    text-align: center;
+                    position: relative;
+
+                    &::after{
+                        content:'';
+                        display: block;
+                        width: 1px;
+                        height: calc(70px * 11 - 25px);
+                        background: #aaa;
+                        position: absolute;
+                        top: 50px;
+                        left: 50px;
+                    }
+                }
+                ul li{
+                    span{
+                        background: #666;
+                        transform: translateX(70px);
+
+                        &::before{
+                            content: '';
+                            display: block;
+                            width: 20px;
+                            height: 1px;
+                            background: #aaa;
+                            position: absolute;
+                            top: 50%;
+                            left: -20px;
+                        }
+                    }
+
+                    &:nth-of-type(1) span::After{
+                        display: none;
+                    }
+                    &:nth-of-type(2) span::After{
+                        height: calc(70px * 3 - 25px);
+                    }
+                    &:nth-of-type(3) span::After{
+                        height: calc(70px * 1 - 25px);
+                    }
+                    &:nth-of-type(4) span::After{
+                        height: calc(70px * 2 - 25px);
+                    }
+                    &:nth-of-type(5) span::After{
+                        height: calc(70px * 3 - 25px);
+                    }
+
+                    ul li{
+                        span{
+                            background: #999;
+                            transform: translateX(140px);
+
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+/* tablet -----------------------------------*/
+@media screen and (max-width:1179px){
+    .department{         
+        .inner{
+            .division{                 
+                height:60vw;                  
+            }    
+        }
+     }
+} 
+
+/* mobile -----------------------------------*/
+@media screen and (max-width:539px){
+    .department{         
+        .inner{
+            .division{                 
+                height:auto;         
+                background:none;  
+                width: 70%;
+                
+                ul.div_tree{
+                    position:relative; 
+                    top:0; 
+                    left: 15%;
+                    opacity:1; 
+                }
+            }    
+        }
+     }
+} 
